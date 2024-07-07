@@ -45,4 +45,5 @@ class Solution(object):
             nums1.pop()
         nums1 += nums2
         return nums1.sort()
+    
 
