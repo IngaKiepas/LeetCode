@@ -1,0 +1,17 @@
+/* 
++---------------------------
+| Column name | Type       |
++--------------------------+
+| student     | varchar   |
+| class       | varchar    |
++--------------------------+
+(student, class) is the primary key (combination of columns with unique values) for this table.
+Each row of this table inidicates the name of a student and the class in which they are enrolled.
+
+Write a solution to find all the classess that have at least five students.
+Return the result table in any order.
+*/
+
+SELECT class from Courses
+group by class
+having count(student) >= 5;
